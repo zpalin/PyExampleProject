@@ -9,6 +9,5 @@ cov:
 	coverage report
 
 clean-pyc:
-	find . -name '*.pyc' -exec rm -f {} +
-	find . -name '*.pyo' -exec rm -f {} +
-	find . -name '*~' -exec rm -f {} +
+	find . | grep -E "(__pycache__|\.pyc|\.pyo$)" | xargs rm -rf
+
