@@ -45,6 +45,13 @@ The different configurations in `.vscode/launch.json` control what options are a
 
 For more information on configuring these see [here](https://github.com/DonJayamanne/pythonVSCode/wiki/Debugging). 
 
+## Coverage
+In order to check test coverage we can use `coverage.py` with the command:
+```
+coverage erase # Erase previous coverage run data
+coverage run -m unittest 
+coverage report
+```
 
 ## TODO
 * Look into `pytlint.rc` file options we should adjust 
