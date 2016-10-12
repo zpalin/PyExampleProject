@@ -1,11 +1,12 @@
 all: clean test
 
 test:
-	py.test tests
+	py.test
 
-cov:
+cov: coverage
+coverage:
 	coverage erase
-	coverage run --source helloworld -m py.test tests
+	coverage run --source helloworld -m pytest
 	coverage report
 
 clean:
