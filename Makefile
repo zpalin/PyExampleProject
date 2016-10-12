@@ -1,7 +1,13 @@
-all: clean test
+all: clean lint test
+
+req:
+	pip install -r requirements.txt
 
 test:
 	py.test
+
+lint:
+	pylint helloworld -r n
 
 cov: coverage
 coverage:
@@ -10,5 +16,5 @@ coverage:
 	coverage report
 
 clean:
-	find . | grep -E "(__pycache__|\.pyc|\.pyo)" | xargs rm -rf
+	find . -name \*.pyc -o -name \*.pyo -o -name __pycache__ -exec rm -rf {} +
 
