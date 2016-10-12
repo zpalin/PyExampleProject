@@ -1,4 +1,4 @@
-all: clean-pyc test
+all: clean test
 
 test:
 	py.test tests
@@ -8,6 +8,6 @@ cov:
 	coverage run --source helloworld -m py.test tests
 	coverage report
 
-clean-pyc:
+clean:
 	find . | grep -E "(__pycache__|\.pyc|\.pyo)" | xargs rm -rf
 
