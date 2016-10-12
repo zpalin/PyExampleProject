@@ -1,5 +1,10 @@
+*.pyc
+*.swp
+.DS_Store
+
 venv/
 htmlcov/
 .coverage
 .cache/
 __pycache__/
+
