@@ -52,6 +52,3 @@ coverage erase # Erase previous coverage run data
 coverage run -m unittest 
 coverage report
 ```
-
-## TODO
-* Look into `pytlint.rc` file options we should adjust 
