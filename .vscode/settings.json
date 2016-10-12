@@ -4,9 +4,5 @@
     "python.linting.enabled": true,
     "python.linting.pep8Enabled": true,
     "python.linting.lintOnSave": true,
-    "python.unitTest.unittestEnabled": true,
-    "python.unitTest.unittestArgs": [
-        "-q",
-        "-s ./tests"
-    ]
+    "python.unitTest.pyTestEnabled": true
 }
